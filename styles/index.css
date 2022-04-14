@@ -1,0 +1,348 @@
+.main {
+    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    width: 75%;
+    margin: auto;
+    margin-top: 5px;
+}
+.navbar-outer{
+    display: flex;
+
+}
+.navbar-outer>div{
+    width: 100%;
+    /* border: 1px solid #000; */
+
+}
+.navbar-outer>div:nth-child(1){
+    text-align: left;
+}
+.navbar-outer>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-outer>div:nth-child(3){
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+}
+#navigation>div{
+    width: 50%;
+    display: flex; 
+    justify-content: space-evenly;
+}
+#navigation>div>a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+  
+.footer{
+    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+      
+  }
+.footer a{
+    color: black;
+  }
+
+  /* remove this in media queries */
+  .About_and_help{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: flex-start;
+    gap: 100px;
+ }
+
+
+.fa {
+    font-size: 20px;
+    width:60px;
+   
+  }
+
+  .socials{
+    /* display: flex; */
+    width:40%;
+    /* border: 1px solid red; */
+    /* justify-content: flex-end; */
+  }
+ .socials>p{
+    font-size: 20px;
+ }
+
+ .bottom p{
+    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    font-weight: lighter;
+    font-size: 13px;
+    cursor: pointer;
+
+ }
+  
+  .best-seller{
+      display: flex;
+      overflow-x: scroll;
+  }
+  /* .best-seller::-webkit-scrollbar{
+      width: 10px;
+  } */
+  .best-seller>div:first-child{
+      width: 25%;
+      background-image: url('https://www.rodanandfields.com/en-us/medias/Best-Sellers-Image-Desktop.jpg?context=bWFzdGVyfHJvb3R8NjA5MTd8aW1hZ2UvanBlZ3xoOTcvaGNkLzEyODg5MTg3ODExMzU4LmpwZ3w2ZGZjZGYxNzg4ZDY2ODI2NzQyZTMyNGI2YmExYmRkNGNjYTBkNGI4MzE5OTIwM2M4M2Q1MGZlMmY1YmFjMDJk');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .best-seller>div>p{
+    font-size:40px;
+    font-weight: lighter;
+    letter-spacing:1px;
+    padding-left: 25px;
+    line-height:1.2;
+  }
+  .best-seller>div:first-child>a{
+      color:#000;
+      padding-left: 25px;
+  }
+  .best-container{
+      display: flex;
+      width:75%; 
+      font-weight: bold;
+  }
+  
+  .best-container>div{
+      width: 340px;
+    border: 10px solid #f7f3ed;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+  }
+  .best-container>div>p:nth-child(3) {
+      font-weight: normal;
+  }
+
+  .best-container img{
+    width: 320px;
+    align-self: center;
+
+  }
+  .best-container>div>button{
+      background-color: #ffffff;
+      cursor: pointer;
+      padding: 13px;
+      border-radius: 6px;
+  }
+  .banner{
+    width: 100%;
+    height: 600px;
+    background-image: url('https://www.rodanandfields.com/en-us/medias/22-Regimen-Repositioning-HP-Banners.jpg?context=bWFzdGVyfHJvb3R8MTA1MjM0NXxpbWFnZS9qcGVnfGg0MS9oOTAvMTQ5MjYyMzI3MTUyOTQuanBnfDM5NmUwZmZkZDI0NzA3NTI2NTBjYzljZmI0YzIxOThjOTJkOThhMTQ0M2YzNzA5ZDUyYjRlYTk3OTc0NjEzNTQ');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom:10px;
+  }
+  .banner-text{
+      width: 20%;
+      height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-left: 70px;
+  }
+  .banner-text>h1{
+      font-weight: normal;
+      font-size: 40px;
+      padding-top: 50px;
+  }
+  .banner-text>p {
+    font-size: 20px;
+  }
+  .banner-text>button{
+      background-color:#fff;
+      border-radius: 7px;
+      cursor: pointer;
+      margin-top: 20px;
+      padding: 10px;
+  }
+  .link{
+      text-align: right;
+      padding-right:25px;
+      color: #cd8665;
+  }
+  .fl3x{
+      margin-top: 100px;
+      padding : 80px;
+      display: grid;
+    
+      grid-template-columns: repeat(3,1fr);
+      gap: 50px;
+      background-color: #f8f8f8;
+  }
+  .fl3x>div>h2{
+    text-align: center;
+    }
+  .fl3x>div>p{
+      text-align: center;
+      cursor: pointer;
+  }
+  .bg{
+    width: 97%;
+    margin-top:10px;
+    padding: 30px 20px 30px 20px;
+    background-color: #e1eaf1;
+    margin-bottom:30px;
+  }
+  .services{
+      width: 75%;
+      margin-left: 150px;
+      background-color: #fff;
+      /* margin-top: 100px; */
+      display: grid;
+      grid-template-columns: repeat(3,1fr)
+      /* padding: 30px */ 
+  }
+  .services>div>h1{
+    font-weight: normal;
+    text-align: center;
+  }
+  .list{
+      padding-top: 30px;
+      padding-left: 20px;
+  }
+  .consultant{
+    width: 200px;
+    height: auto;
+    margin: 30px 0px 0 0 ;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .skincare{
+      background-color: #f8f4f2;
+      padding-bottom: 100px;
+      margin-bottom: 80px;
+  }
+  .products {
+      display: flex;
+      gap: 20px;
+      padding: 30px;
+
+  }
+.skincare>div>h1{
+    padding-top: 40px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+  .products>div>img{
+      width : 100%;
+  }
+  .products>div>p{
+    text-align: center;
+    font-weight: bold;
+    /* background-color: #ffff; */
+  }
+  .products-btn{
+    width:200px;
+    background-color: #f8f4f2;
+    display: flex;
+    margin-left: 610px;
+    justify-content: center;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 10px;
+    /* text-align: center; */
+  }
+    .hover-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 170px;
+}
+.imageEffect {
+    position: relative;
+}
+.imageEffect:hover img{
+    opacity: 0;
+}
+.imageEffect:hover .hover-img{
+    opacity: 1;
+}
+
+.merge{
+    /* border: 1px solid #000;  */
+     display: flex; 
+     gap: 15px;
+    overflow-x: scroll;
+}
+/* .merge::-webkit-scrollbar{
+    width: 10px;
+} */
+
+
+.card{
+    display: flex;
+    /* border: 1px solid rgb(206, 22, 22);  */
+}
+.card>div:first-child{
+    width: 320px;
+    height: 344px;
+    box-sizing: border-box;
+    line-height: 1.3;
+    letter-spacing: 1.2px;
+}
+
+.mergeImg>img{
+    width: 344px;
+    height: 344px;
+}
+
+.bgText1{
+    background-color: #f4efe7;  
+
+}
+ 
+.bgText2{
+    background-color: #cee4c9;  
+    
+}
+
+.bgText3{
+    background-color: #f0e1dd;  
+    
+}
+
+.bgText1,.bgText2,.bgText3 {
+    padding-left: 40px ;
+
+}
+.card p:first-child{
+    font-size: 40px;
+}
+
+.mail>p{
+    font-size: 20px;
+}
+
+.bottom-img  {
+    display: flex;
+    gap: 10px;
+}
+.bottom-img img{
+    width: 344px;
+    height: 344px;
+}

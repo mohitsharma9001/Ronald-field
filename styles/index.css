@@ -4,6 +4,17 @@
     margin: auto;
     margin-top: 5px;
 }
+
+.top{
+    background-color: #f7f4f2;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    font-size: 12px;
+}
+.top>b{
+    cursor: pointer;
+}
 .navbar-outer{
     display: flex;
 
@@ -48,7 +59,7 @@
 
   
 .footer{
-    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: flex;
     /* border: 1px solid black; */
     justify-content: space-between;
@@ -65,7 +76,9 @@
     justify-content: flex-start;
     gap: 100px;
  }
-
+.About_and_help>div>p {
+    font-size: 12px;
+}
 
 .fa {
     font-size: 20px;
@@ -74,11 +87,9 @@
   }
 
   .socials{
-    /* display: flex; */
     width:40%;
-    /* border: 1px solid red; */
-    /* justify-content: flex-end; */
   }
+  
  .socials>p{
     font-size: 20px;
  }
@@ -94,10 +105,10 @@
   .best-seller{
       display: flex;
       overflow-x: scroll;
+
   }
-  /* .best-seller::-webkit-scrollbar{
-      width: 10px;
-  } */
+
+
   .best-seller>div:first-child{
       width: 25%;
       background-image: url('https://www.rodanandfields.com/en-us/medias/Best-Sellers-Image-Desktop.jpg?context=bWFzdGVyfHJvb3R8NjA5MTd8aW1hZ2UvanBlZ3xoOTcvaGNkLzEyODg5MTg3ODExMzU4LmpwZ3w2ZGZjZGYxNzg4ZDY2ODI2NzQyZTMyNGI2YmExYmRkNGNjYTBkNGI4MzE5OTIwM2M4M2Q1MGZlMmY1YmFjMDJk');
@@ -148,19 +159,32 @@
   .banner{
     width: 100%;
     height: 600px;
-    background-image: url('https://www.rodanandfields.com/en-us/medias/22-Regimen-Repositioning-HP-Banners.jpg?context=bWFzdGVyfHJvb3R8MTA1MjM0NXxpbWFnZS9qcGVnfGg0MS9oOTAvMTQ5MjYyMzI3MTUyOTQuanBnfDM5NmUwZmZkZDI0NzA3NTI2NTBjYzljZmI0YzIxOThjOTJkOThhMTQ0M2YzNzA5ZDUyYjRlYTk3OTc0NjEzNTQ');
+    /* background-image: url('https://www.rodanandfields.com/en-us/medias/22-Regimen-Repositioning-HP-Banners.jpg?context=bWFzdGVyfHJvb3R8MTA1MjM0NXxpbWFnZS9qcGVnfGg0MS9oOTAvMTQ5MjYyMzI3MTUyOTQuanBnfDM5NmUwZmZkZDI0NzA3NTI2NTBjYzljZmI0YzIxOThjOTJkOThhMTQ0M2YzNzA5ZDUyYjRlYTk3OTc0NjEzNTQ');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     margin-bottom:10px;
+    position: relative;
   }
+  .banner>img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+  }
+
+
   .banner-text{
       width: 20%;
+      top:30px;
+      position: absolute;
       height: 400px;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
     margin-left: 70px;
   }
+ 
+
+
   .banner-text>h1{
       font-weight: normal;
       font-size: 40px;
@@ -184,9 +208,9 @@
   .fl3x{
       margin-top: 100px;
       padding : 80px;
-      display: grid;
-    
-      grid-template-columns: repeat(3,1fr);
+      display: flex;
+      overflow-x:scroll;
+      /* grid-template-columns: repeat(3,1fr); */
       gap: 50px;
       background-color: #f8f8f8;
   }
@@ -203,18 +227,45 @@
     padding: 30px 20px 30px 20px;
     background-color: #e1eaf1;
     margin-bottom:30px;
+    
   }
+
+  
   .services{
       width: 75%;
       margin-left: 150px;
       background-color: #fff;
       /* margin-top: 100px; */
-      display: grid;
-      grid-template-columns: repeat(3,1fr)
+      /* display: grid; */
+      display:flex;
+      justify-content: space-evenly;
+      /* grid-template-columns: repeat(3,1fr) */
       /* padding: 30px */ 
-  }
-  .services>div>h1{
+    }
+    @media only screen and (max-width:600px){
+      .bg{
+          max-width:400px;
+          height:500px;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          padding:30px 0;
+          /* padding:0; */
+      }
+      .services{
+          display:flex;
+          flex-direction: column;
+          height:80%;
+          margin-left:0px;
+      }
+      .services>div:last-child{
+          display:flex;
+          justify-content:center;
+      }
+    }
+    .services>div>h1{
     font-weight: normal;
+    max-width: 350px;
     text-align: center;
   }
   .list{
@@ -340,9 +391,127 @@
 
 .bottom-img  {
     display: flex;
+    overflow-x:scroll;
     gap: 10px;
 }
 .bottom-img img{
     width: 344px;
     height: 344px;
+}
+
+/* Responsiveness */
+
+
+/* @media all and (min-width:451px) and (max-width:850px) {
+
+    .main {
+        width: 100%;
+    }
+    .invisible>div:first-child{
+        display: none;
+    }
+    .invisible>div:nth-child(2){
+        display: none;
+    }
+    .invisible>div:last-child{
+        display: none;
+    }
+    .checkbtn {
+        display: block;
+    }
+    #navigation>div>a {
+        display : none;
+    }
+    .banner{
+        width: 800px;
+        height: 340px;
+        background-image: url('https://www.rodanandfields.com/en-us/medias/22-Regimen-Repositioning-HP-Banners.jpg?context=bWFzdGVyfHJvb3R8MTA1MjM0NXxpbWFnZS9qcGVnfGg0MS9oOTAvMTQ5MjYyMzI3MTUyOTQuanBnfDM5NmUwZmZkZDI0NzA3NTI2NTBjYzljZmI0YzIxOThjOTJkOThhMTQ0M2YzNzA5ZDUyYjRlYTk3OTc0NjEzNTQ');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* margin-bottom:10px; */
+      /* }
+} */ 
+
+/* .checkbtn {
+    font-size: 30px;
+    color: #000;
+    float: right;
+    line-height: 40px;
+    margin-left:40px;
+    cursor: pointer;
+    display: none;
+}*/
+ #check {
+    display: none;
+} 
+.checkbtn {
+    display: block;
+} 
+
+    
+@media all and (min-width:86px) and (max-width:450px){
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    .main {
+        width: 100%;
+        
+    }
+    .navbar-outer>div>p {
+        display: none;
+    }
+    .invisible>div:first-child{
+        display: none;
+    }
+    .invisible>div:nth-child(2){
+        display: none;
+    }
+    .invisible>div:last-child{
+        display: none;
+    }
+    #navigation>div>a{
+        display: none;
+    }
+    .link{
+        display: none;
+    }
+    .best-seller>div:first-child{
+        display:none;
+    }
+    .banner{
+
+        height: 745px;
+        width: auto;
+        /* range: url('https://www.rodanandfields.com/en-us/medias/22-Regimen-Repositioning-HP-Banners.jpg?context=bWFzdGVyfHJvb3R8MTA1MjM0NXxpbWFnZS9qcGVnfGg0MS9oOTAvMTQ5MjYyMzI3MTUyOTQuanBnfDM5NmUwZmZkZDI0NzA3NTI2NTBjYzljZmI0YzIxOThjOTJkOThhMTQ0M2YzNzA5ZDUyYjRlYTk3OTc0NjEzNTQ'); */
+      }
+      .banner>img{
+          height:40%;
+      }
+      .banner-text{
+        width: 100%;
+        top:40%;
+        display: flex;
+        margin-left:0;
+        /* flex-direction: row; */
+      }
+
+
+      .skincare>div>h1{
+          font-size: 23px;
+      }
+      .products{
+          display: grid;
+          grid-template-columns: repeat(2,1fr)
+
+      }
+      .products-btn{
+         margin-left :80px;
+      }
+      .hover-img{
+          height: 130px;
+      }
 }

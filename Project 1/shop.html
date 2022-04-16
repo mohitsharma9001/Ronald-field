@@ -6,179 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/a3fd128c40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="shop.css">
 </head>
 <style>
-    .navbar-outer{
-    display: flex;
-
-}
-.navbar-outer>div{
-    width: 100%;
-    /* border: 1px solid #000; */
-
-}
-.navbar-outer>div:nth-child(1){
-    text-align: left;
-}
-.navbar-outer>div:nth-child(2){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.navbar-outer>div:nth-child(3){
-    display: flex;
-    justify-content: flex-end;
-    align-items:center;
-}
-
-#navigation {
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-
-}
-#navigation>div{
-    width: 50%;
-    display: flex; 
-    justify-content: space-evenly;
-}
-#navigation>div>a{
-    text-decoration: none;
-    color: #000;
-}
-#navigation {
-    display: flex;
-    justify-content: space-evenly;
-    
-    margin-top: 5px;
-    
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
-}
-
-#navigation > div {
-    display: flex;
-}
-
-#navigation a {
-    text-decoration: none;
-    color: black;
-    font-size: 12.5px;
-}
-    #container{
-        width: 63%;
-      height: 500px;
-        display: flex;
-        justify-content: space-evenly;
-        margin: auto;
-    }
-    #container>image{
-        width: 40%;
-        height: 200px;
-        
-    }
-    #content{
-        margin-top: 70px;
-    }
-    button{
-        padding: 9px 120px 9px 120px;
-    background-color: black;
-    color: white;
-    border: 0.5px solid black;
-    border-radius: 8px;
- }
- button:hover{
-     
-     cursor: pointer;
- }
- .footer{
-    font-family: ProximaNovaRegular,Arial,Sans-Serif;
-    display: flex;
-    /* border: 1px solid black; */
-    justify-content: space-between;
-      
-  }
-.footer a{
-    color: black;
-  }
-
-  /* remove this in media queries */
-  .About_and_help{
-    display: flex;
-    /* border: 1px solid blue; */
-    justify-content: flex-start;
-    gap: 100px;
- }
-
-
-.fa {
-    font-size: 20px;
-    width:60px;
-   
-  }
-
-  .socials{
-    width:40%;
-  }
   
- .socials>p{
-    font-size: 20px;
- }
-
- .bottom p{
-    font-family: ProximaNovaRegular,Arial,Sans-Serif;
-    font-weight: lighter;
-    font-size: 13px;
-    cursor: pointer;
-
- }
-
-/* #discount{
-    background-color: antiquewhite;
-} */
- #discount{
-     margin-top: 10px;
-     background-color: rgb(247, 243, 238);
-     line-height: 10%;
-     border: 1px solid rgb(247, 243, 238);
-     
- }
- @media all and (min-width:501px) and (max-width:1008px){
-    #container{
-       display: inline-block;
-       
-    }
-    #container>image{
-        width: 100%;
-        height: 50px;
-        
-    }
-    #content{
-        margin-bottom: 100px;
-        font-size: small;
-        
-    }
- 
- }
- @media all and (min-width:50px) and (max-width:500px){
-    #container{
-       display: inline-block;
-       
-    }
-    #container>image{
-        width: 100%;
-        height: 50px;
-        
-    }
-    #content{
-        margin-bottom: 100px;
-        font-size: small;
-        
-    }
- 
- }
 
 </style>
 <body>
@@ -298,6 +129,7 @@
           console.log(product)
          localStorage.setItem('product',JSON.stringify(product));
          alert("Product Added")
+        //  alerti(mojo)
 
   });
 </script>

@@ -1,0 +1,246 @@
+.navbar-outer{
+    display: flex;
+
+}
+.navbar-outer>div{
+    width: 100%;
+    /* border: 1px solid #000; */
+
+}
+.navbar-outer>div:nth-child(1){
+    text-align: left;
+    
+}
+.navbar-outer>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+.navbar-outer>div:nth-child(3){
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    
+}
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    /* margin-left: 50px; */
+}
+#navigation>div{
+    width: 50%;
+    display: flex; 
+    justify-content: space-around;
+}
+#navigation>div>a{
+    text-decoration: none;
+    color: #000;
+}
+#navigation {
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 5px;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+#navigation > div {
+    display: flex;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 12.5px;
+}
+  #check{
+ 
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 75%;
+     }
+  
+   .box>button{
+    padding: 4px 110px 4px 110px;
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+   }
+   .box>img{
+       width: 80%;
+       height: 35%;
+       border-radius: 10px;
+   } 
+   #container{
+       display: flex;
+       justify-content: space-around;
+       margin-top: 50px;
+   }
+   .box{
+       width: 80%;
+   }
+
+/* footer css */
+
+   .footer{
+    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    display: flex;
+   justify-content: space-between;
+      
+  }
+.footer a{
+    color: black;
+  }
+
+  /* remove this in media queries */
+  .About_and_help{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: flex-start;
+    gap: 100px;
+ }
+
+
+.fa {
+    font-size: 20px;
+    width:60px;
+   
+  }
+
+  .socials{
+    width:40%;
+  }
+  
+ .socials>p{
+    font-size: 20px;
+ }
+
+ .bottom p{
+    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    font-weight: lighter;
+    font-size: 13px;
+    cursor: pointer;
+
+ }
+ #chotuu{
+     width: 20%;
+     height: 500px;
+     border-radius: 10px;
+     text-align: center;
+     margin-top: 60px;
+     background-color: rgb(250, 245, 245);
+     padding: 5px 40px 5px 40px;
+ }
+ button{
+    padding: 9px 80px 9px 80px;
+    background-color: white;
+    border-radius: 8px;
+    border: 0.5px solid black;
+    font-weight: bold;
+ }
+
+ @media all and (min-width:501px) and (max-width:1008px){
+     #container{
+        display: inline-block;
+     }
+    #check{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  width: 100%;
+  font-size: small;
+   }
+
+ .box>button{
+  padding: 4px 100px 4px 100px;
+  background-color: white;
+  border: 0.5px solid black;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+ }
+
+ .box>img{
+       width: 90%;
+       height: 45%;
+       border-radius: 10px;
+   } 
+ .box{
+     width: 100%;
+ }
+ #chotuu{
+     width: 90%;
+     height: 200px;
+    border-radius: 10px;
+     text-align: center;
+     background-color: rgb(250, 245, 245);
+     padding: 5px 20px 5px 20px;
+ }
+ button{
+    padding: 7px 20px 7px 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 0.5px solid black;
+    font-weight: bold;
+ }
+ }
+ 
+ @media all and (min-width:50px) and (max-width:500px){
+     #container{
+        display: inline-block;
+     }
+    #check{
+ display: grid;
+ grid-template-columns: repeat(1,1fr);
+  /* gap: 10px; */
+  width: 100%;
+  font-size: 20px;
+   }
+   .box>img{
+       width: 100%;
+       height: 35%;
+       border-radius: 10px;
+       
+      
+   } 
+ .box>button{
+  padding: 10px 200px 10px 200px;
+  background-color: white;
+  /* border: 0.5px solid black; */
+  border-radius: 8px;
+  font-weight: 14px;
+  cursor: pointer;
+ }
+
+
+ .box{
+     margin-bottom: -80px;
+     width: 115%;
+ }
+ #chotuu{
+     width: 90%;
+     height: 200px;
+    border-radius: 10px;
+     text-align: center;
+     background-color: rgb(250, 245, 245);
+     padding: 5px 20px 5px 20px;
+     margin-top: -70px;
+ }
+ button{
+    padding: 7px 20px 7px 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 0.5px solid black;
+    font-weight: bold;
+ }
+ }

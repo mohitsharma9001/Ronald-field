@@ -1,0 +1,273 @@
+#header a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+#signin{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    right: 78px;
+    top: 60px;
+    border-radius: 3px;
+    border-bottom: 5px ;
+    margin-top: 1%;
+}
+
+#signin  > form{
+    text-align: left;
+    width: 250px;
+    margin: auto;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    
+    
+}
+#signin  > form>.Forgot{
+    text-align: right;
+    color: blue;
+}
+#signin  > form> input[type="email"], input[type="password"]{
+    width: 100%;
+    height: 20px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.sgemail{
+    width: 100%;
+    height: 20px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.submit{
+    margin-top: 10px;
+    width: 270px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+}
+.active-flag span{
+    display: inline-block;
+    vertical-align: text-top;
+}
+.flag{
+    /* background-image: https://www.rodanandfields.com/en-us/_ui/dest/images/flagUSA.png; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    padding: 6px 9.5px;
+    margin-top: 2.5px;
+}
+hr{
+    margin-bottom: 0%;
+}
+.left_nav{
+    text-align: left;
+}
+.right_nav{
+    text-align: right;
+}
+/* .right_nav{
+    display: flex;
+    justify-content: right; 
+} */
+#navigation {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 0px;
+    margin-top: 0%;
+    
+}
+
+#navigation > div {
+    display: flex;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+.connect{
+    color: black;
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.connect h2{
+    font-size: 30px;
+}
+.connect p{
+    font-size: 20px;
+}
+#main{
+    display: flex;
+    margin-bottom: 30px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    justify-content: space-between;
+}
+.div1{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 40%;
+    text-align: center;
+    padding: 40px;
+    /* margin: 50px; */
+}
+
+.div2{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    width: 40%;
+    padding: 40px;
+    /* margin: 50px; */
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+   
+}
+button{
+    width: 100%;
+    padding: 12px;
+}
+#b1{
+    background-color: black;
+    color: white;
+    padding: 12px;
+}
+#b2{
+    background-color: white;
+}
+  .input_box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 45px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  
+   .icon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: grey;
+  }
+  .bag-icon::before{
+      content: icon;
+  }
+  .signin{
+      border: none;
+      background-color: white;
+      width: 30px;
+  }
+  /* #Fotter{
+      height: 300px;
+      display: flex;
+      justify-content: space-between;
+      
+      
+  }
+  #Fotter a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    justify-content: space-around;
+    
+  }
+  
+  .fa {
+    text-decoration: none;
+    /* padding: 20px; */
+    /* font-size: 400px;
+    width: 30px;
+    text-align: center;
+    
+   
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .social h1{
+      font-weight: lighter;
+      padding-right: 300px;
+  }
+ .social a{
+     text-decoration: none;
+     font-size: 80px;
+     
+ }
+ .About_and_help{
+display: flex;
+justify-content: space-between;
+width: 40%;
+ } */
+ .footer{
+    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+      
+  }
+  .footer h1{
+      font-weight: lighter;
+  }
+.footer a{
+    color: black;
+    text-decoration: none;
+  }
+
+  /* remove this in media queries */
+  .About_and_help{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: flex-start;
+    gap: 100px;
+ }
+
+
+.fa {
+    font-size: 20px;
+    width:10px;
+    margin-right: 20px;
+   
+  }
+
+  .socials{
+    width:40%;
+  }
+  
+ .socials>p{
+    font-size: 20px;
+ }
+
+ .bottom p{
+    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    font-weight: lighter;
+    font-size: 13px;
+    cursor: pointer;
+
+ }
+  
+
+ 

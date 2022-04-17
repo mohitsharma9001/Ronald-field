@@ -85,6 +85,9 @@
      background-color: rgb(243, 237, 237);
      cursor: pointer;
  }
+ .fa-solid fa-bag-shopping {
+     color: #000;
+ }
  #box{
     display: flex;
     

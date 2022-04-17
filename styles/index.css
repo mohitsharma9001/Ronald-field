@@ -1,511 +1,494 @@
 .main {
-    font-family: ProximaNovaRegular,Arial,Sans-Serif;
-    width: 75%;
-    margin: auto;
-    margin-top: 5px;
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  width: 75%;
+  margin: auto;
+  margin-top: 5px;
 }
 
-.top{
-    background-color: #f7f4f2;
-    text-align: center;
-    padding: 5px 0 5px 0;
-    font-family: ProximaNovaRegular,Arial,Sans-Serif;
-    font-size: 12px;
+.top {
+  background-color: #f7f4f2;
+  text-align: center;
+  padding: 5px 0 5px 0;
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-size: 12px;
 }
-.top>b{
-    cursor: pointer;
+.navbar-outer {
+  display: flex;
 }
-.navbar-outer{
-    display: flex;
-
+.navbar-outer > div {
+  width: 100%;
+  /* border: 1px solid #000; */
 }
-.navbar-outer>div{
-    width: 100%;
-    /* border: 1px solid #000; */
-
+.navbar-outer > div:nth-child(1) {
+  text-align: left;
 }
-.navbar-outer>div:nth-child(1){
-    text-align: left;
+.navbar-outer > div:nth-child(1) > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
 }
-.navbar-outer>div:nth-child(2){
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar-outer > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.navbar-outer>div:nth-child(3){
-    display: flex;
-    justify-content: flex-end;
-    align-items:center;
+.navbar-outer > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logo {
+  padding: 10px;
 }
 
 #navigation {
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
-#navigation>div{
-    width: 50%;
-    display: flex; 
-    justify-content: space-evenly;
+#navigation > div {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
 }
-#navigation>div>a{
-    text-decoration: none;
-    color: #000;
+#navigation > div > a {
+  text-decoration: none;
+  color: #000;
 }
 
-
-  
-.footer{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+.footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
     display: flex;
-    /* border: 1px solid black; */
-    justify-content: space-between;
-      
-  }
-.footer a{
-    color: black;
-  }
+  /* border: 1px solid black; */
+  justify-content: space-between;
+}
+.footer a {
+  color: black;
+}
 
-  /* remove this in media queries */
-  .About_and_help{
-    display: flex;
-    /* border: 1px solid blue; */
-    justify-content: flex-start;
-    gap: 100px;
- }
-.About_and_help>div>p {
-    font-size: 12px;
+/* remove this in media queries */
+.About_and_help {
+  display: flex;
+  /* border: 1px solid blue; */
+  justify-content: flex-start;
+  gap: 100px;
+}
+.About_and_help > div > p {
+  font-size: 12px;
 }
 
 .fa {
-    font-size: 20px;
-    width:60px;
-   
-  }
-
-  .socials{
-    width:40%;
-  }
-  
- .socials>p{
-    font-size: 20px;
- }
-
- .bottom p{
-    font-family: ProximaNovaRegular,Arial,Sans-Serif;
-    font-weight: lighter;
-    font-size: 13px;
-    cursor: pointer;
-
- }
-  
-  .best-seller{
-      display: flex;
-      overflow-x: scroll;
-
-  }
-
-
-  .best-seller>div:first-child{
-      width: 25%;
-      background-image: url('https://www.rodanandfields.com/en-us/medias/Best-Sellers-Image-Desktop.jpg?context=bWFzdGVyfHJvb3R8NjA5MTd8aW1hZ2UvanBlZ3xoOTcvaGNkLzEyODg5MTg3ODExMzU4LmpwZ3w2ZGZjZGYxNzg4ZDY2ODI2NzQyZTMyNGI2YmExYmRkNGNjYTBkNGI4MzE5OTIwM2M4M2Q1MGZlMmY1YmFjMDJk');
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-  .best-seller>div>p{
-    font-size:40px;
-    font-weight: lighter;
-    letter-spacing:1px;
-    padding-left: 25px;
-    line-height:1.2;
-  }
-  .best-seller>div:first-child>a{
-      color:#000;
-      padding-left: 25px;
-  }
-  .best-container{
-      display: flex;
-      width:75%; 
-      font-weight: bold;
-  }
-  
-  .best-container>div{
-      width: 340px;
-    border: 10px solid #f7f3ed;
-    padding: 10px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-  }
-  .best-container>div>p:nth-child(3) {
-      font-weight: normal;
-  }
-
-  .best-container img{
-    width: 320px;
-    align-self: center;
-
-  }
-  .best-container>div>button{
-      background-color: #ffffff;
-      cursor: pointer;
-      padding: 13px;
-      border-radius: 6px;
-  }
-  .banner{
-    width: 100%;
-    height: 600px;
-   
-    margin-bottom:10px;
-    position: relative;
-  }
-  .banner>img{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-  }
-
-
-  .banner-text{
-      width: 20%;
-      top:30px;
-      position: absolute;
-      height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    margin-left: 70px;
-  }
- 
-
-
-  .banner-text>h1{
-      font-weight: normal;
-      font-size: 40px;
-      padding-top: 50px;
-  }
-  .banner-text>p {
-    font-size: 20px;
-  }
-  .banner-text>button{
-      background-color:#fff;
-      border-radius: 7px;
-      cursor: pointer;
-      margin-top: 20px;
-      padding: 10px;
-  }
-  .link{
-      text-align: right;
-      padding-right:25px;
-      color: #cd8665;
-  }
-  .fl3x{
-      margin-top: 100px;
-      padding : 80px;
-      display: flex;
-      overflow-x:scroll;
-      /* grid-template-columns: repeat(3,1fr); */
-      gap: 50px;
-      background-color: #f8f8f8;
-  }
-  .fl3x>div>h2{
-    text-align: center;
-    }
-  .fl3x>div>p{
-      text-align: center;
-      cursor: pointer;
-  }
-  .bg{
-    width: 97%;
-    margin-top:10px;
-    padding: 30px 20px 30px 20px;
-    background-color: #e1eaf1;
-    margin-bottom:30px;
-    
-  }
-
-  
-  .services{
-      width: 75%;
-      margin-left: 150px;
-      background-color: #fff;
-      
-      display:flex;
-      justify-content: space-evenly;
-    
-    }
-    @media only screen and (max-width:600px){
-      .bg{
-          max-width:400px;
-          height:500px;
-          display:flex;
-          align-items: center;
-          justify-content: center;
-          padding:30px 0;
-          /* padding:0; */
-      }
-      .services{
-          display:flex;
-          flex-direction: column;
-          height:80%;
-          margin-left:0px;
-      }
-      .services>div:last-child{
-          display:flex;
-          justify-content:center;
-      }
-    }
-    .services>div>h1{
-    font-weight: normal;
-    max-width: 350px;
-    text-align: center;
-  }
-  .list{
-      padding-top: 30px;
-      padding-left: 20px;
-  }
-  .consultant{
-    width: 200px;
-    height: auto;
-    margin: 30px 0px 0 0 ;
-    background-color: #FFFFFF;
-    border-radius: 7px;
-    cursor: pointer;
-    padding: 10px;
-  }
-  .skincare{
-      background-color: #f8f4f2;
-      padding-bottom: 100px;
-      margin-bottom: 80px;
-  }
-  .products {
-      display: flex;
-      gap: 20px;
-      padding: 30px;
-
-  }
-.skincare>div>h1{
-    padding-top: 40px;
-    font-size: 50px;
-    text-align: center;
-    font-weight: normal;
+  font-size: 20px;
+  width: 60px;
 }
-  .products>div>img{
-      width : 100%;
-  }
-  .products>div>p{
-    text-align: center;
-    font-weight: bold;
-    /* background-color: #ffff; */
-  }
-  .products-btn{
-    width:200px;
-    background-color: #f8f4f2;
+
+.socials {
+  width: 40%;
+}
+
+.socials > p {
+  font-size: 20px;
+}
+
+.bottom p {
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-weight: lighter;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.best-seller {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.best-seller > div:first-child {
+  width: 25%;
+  background-image: url("https://www.rodanandfields.com/en-us/medias/Best-Sellers-Image-Desktop.jpg?context=bWFzdGVyfHJvb3R8NjA5MTd8aW1hZ2UvanBlZ3xoOTcvaGNkLzEyODg5MTg3ODExMzU4LmpwZ3w2ZGZjZGYxNzg4ZDY2ODI2NzQyZTMyNGI2YmExYmRkNGNjYTBkNGI4MzE5OTIwM2M4M2Q1MGZlMmY1YmFjMDJk");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.best-seller > div > p {
+  font-size: 40px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-left: 25px;
+  line-height: 1.2;
+}
+.best-seller > div:first-child > a {
+  color: #000;
+  padding-left: 25px;
+}
+.best-container {
+  display: flex;
+  width: 75%;
+  font-weight: bold;
+}
+
+.best-container > div {
+  width: 340px;
+  border: 10px solid #f7f3ed;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.best-container > div > p:nth-child(3) {
+  font-weight: normal;
+}
+
+.best-container img {
+  width: 320px;
+  align-self: center;
+}
+.best-container > div > button {
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 13px;
+  border-radius: 6px;
+}
+.banner {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.banner > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.banner-text {
+  width: 20%;
+  top: 30px;
+  position: absolute;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 70px;
+}
+
+.banner-text > h1 {
+  font-weight: normal;
+  font-size: 40px;
+  padding-top: 50px;
+}
+.banner-text > p {
+  font-size: 20px;
+}
+.banner-text >a> button {
+  background-color: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px;
+}
+.link {
+  text-align: right;
+  padding-right: 25px;
+  color: #cd8665;
+}
+.fl3x {
+  margin-top: 100px;
+  padding: 80px;
+  display: flex;
+  overflow-x: scroll;
+  /* grid-template-columns: repeat(3,1fr); */
+  gap: 50px;
+  background-color: #f8f8f8;
+}
+.fl3x > div > h2 {
+  text-align: center;
+}
+.fl3x > div > p {
+  text-align: center;
+  cursor: pointer;
+}
+.bg {
+  width: 97%;
+  margin-top: 10px;
+  padding: 30px 20px 30px 20px;
+  background-color: #e1eaf1;
+  margin-bottom: 30px;
+}
+
+.services {
+  width: 75%;
+  margin-left: 150px;
+  background-color: #fff;
+  /* margin-top: 100px; */
+  /* display: grid; */
+  display: flex;
+  justify-content: space-evenly;
+  /* grid-template-columns: repeat(3,1fr) */
+  /* padding: 30px */
+}
+@media only screen and (max-width: 600px) {
+  .bg {
+    max-width: 400px;
+    height: 500px;
     display: flex;
-    margin-left: 610px;
+    align-items: center;
     justify-content: center;
-    border-radius: 7px;
-    cursor: pointer;
-    padding: 10px;
-    /* text-align: center; */
+    padding: 30px 0;
+    /* padding:0; */
   }
-    .hover-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    height: 170px;
+  .services {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin-left: 0px;
+  }
+  .services > div:last-child {
+    display: flex;
+    justify-content: center;
+  }
+}
+.services > div > h1 {
+  font-weight: normal;
+  max-width: 350px;
+  text-align: center;
+}
+.list {
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.bg{
+  width: 100%;
+  max-width:none;
+}
+
+.consultant {
+  width: 200px;
+  height: auto;
+  margin: 30px 0px 0 0;
+  background-color: #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 10px;
+}
+.skincare {
+  background-color: #f8f4f2;
+  padding-bottom: 100px;
+  margin-bottom: 80px;
+}
+.products {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+.skincare > div > h1 {
+  padding-top: 40px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: normal;
+}
+.products > div > img {
+  width: 100%;
+}
+.products > div > p {
+  text-align: center;
+  font-weight: bold;
+  /* background-color: #ffff; */
+}
+.products-btn {
+  width: 200px;
+  background-color: #f8f4f2;
+  display: flex;
+  margin-left: 610px;
+  justify-content: center;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 10px;
+  /* text-align: center; */
+}
+.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 170px;
 }
 .imageEffect {
-    position: relative;
+  position: relative;
 }
-.imageEffect:hover img{
-    opacity: 0;
+.imageEffect:hover img {
+  opacity: 0;
 }
-.imageEffect:hover .hover-img{
-    opacity: 1;
-}
-
-.merge{
-  
-     display: flex; 
-     gap: 15px;
-    overflow-x: scroll;
+.imageEffect:hover .hover-img {
+  opacity: 1;
 }
 
-
-
-.card{
-    display: flex;
-    
+.merge {
+  /* border: 1px solid #000;  */
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
 }
-.card>div:first-child{
-    width: 320px;
-    height: 344px;
-    box-sizing: border-box;
-    line-height: 1.3;
-    letter-spacing: 1.2px;
-}
+/* .merge::-webkit-scrollbar{
+    width: 10px;
+} */
 
-.mergeImg>img{
-    width: 344px;
-    height: 344px;
+.card {
+  display: flex;
+  /* border: 1px solid rgb(206, 22, 22);  */
 }
-
-.bgText1{
-    background-color: #f4efe7;  
-
-}
- 
-.bgText2{
-    background-color: #cee4c9;  
-    
+.card > div:first-child {
+  width: 320px;
+  height: 344px;
+  box-sizing: border-box;
+  line-height: 1.3;
+  letter-spacing: 1.2px;
 }
 
-.bgText3{
-    background-color: #f0e1dd;  
-    
+.mergeImg > img {
+  width: 344px;
+  height: 344px;
 }
 
-.bgText1,.bgText2,.bgText3 {
-    padding-left: 40px ;
-
-}
-.card p:first-child{
-    font-size: 40px;
+.bgText1 {
+  background-color: #f4efe7;
 }
 
-.mail>p{
-    font-size: 20px;
+.bgText2 {
+  background-color: #cee4c9;
 }
 
-.bottom-img  {
-    display: flex;
-    overflow-x:scroll;
-    gap: 10px;
+.bgText3 {
+  background-color: #f0e1dd;
 }
-.bottom-img img{
-    width: 344px;
-    height: 344px;
+
+.bgText1,
+.bgText2,
+.bgText3 {
+  padding-left: 40px;
+}
+.card p:first-child {
+  font-size: 40px;
+}
+
+.mail > p {
+  font-size: 20px;
+}
+
+.bottom-img {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+.bottom-img img {
+  width: 344px;
+  height: 344px;
 }
 
 /* Responsiveness */
-
-
-/* @media all and (min-width:451px) and (max-width:850px) {
-
-    .main {
-        width: 100%;
-    }
-    .invisible>div:first-child{
-        display: none;
-    }
-    .invisible>div:nth-child(2){
-        display: none;
-    }
-    .invisible>div:last-child{
-        display: none;
-    }
-    .checkbtn {
-        display: block;
-    }
-    #navigation>div>a {
-        display : none;
-    }
-    .banner{
-        width: 800px;
-        height: 340px;
-        background-image: url('https://www.rodanandfields.com/en-us/medias/22-Regimen-Repositioning-HP-Banners.jpg?context=bWFzdGVyfHJvb3R8MTA1MjM0NXxpbWFnZS9qcGVnfGg0MS9oOTAvMTQ5MjYyMzI3MTUyOTQuanBnfDM5NmUwZmZkZDI0NzA3NTI2NTBjYzljZmI0YzIxOThjOTJkOThhMTQ0M2YzNzA5ZDUyYjRlYTk3OTc0NjEzNTQ');
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* margin-bottom:10px; */
-      /* }
-} */ 
-
-/* .checkbtn {
-    font-size: 30px;
-    color: #000;
-    float: right;
-    line-height: 40px;
-    margin-left:40px;
-    cursor: pointer;
-    display: none;
-}*/
- #check {
-    display: none;
-} 
+#check {
+  display: none;
+}
 .checkbtn {
-    display: block;
-} 
+  display: block;
+}
 
-    
-@media all and (min-width:86px) and (max-width:450px){
-    body {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden;
-    }
-    .main {
-        width: 100%;
-        
-    }
-    .navbar-outer>div>p {
-        display: none;
-    }
-    .invisible>div:first-child{
-        display: none;
-    }
-    .invisible>div:nth-child(2){
-        display: none;
-    }
-    .invisible>div:last-child{
-        display: none;
-    }
-    #navigation>div>a{
-        display: none;
-    }
-    .link{
-        display: none;
-    }
-    .best-seller>div:first-child{
-        display:none;
-    }
-    .banner{
+@media all and (min-width: 86px) and (max-width: 450px) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  .main {
+    width: 100%;
+  }
+  .navbar-outer > div > p {
+    display: none;
+  }
+  .invisible > div:first-child {
+    display: none;
+  }
+  .invisible > div:nth-child(2) {
+    display: none;
+  }
+  .invisible > div:last-child {
+    display: none;
+  }
+  .navbar-outer > div > a {
+    display: none;
+  }
+  #navigation > div > a {
+    display: none;
+  }
+  .banner-text button {
+      padding: 20px;
+      margin: 0px;
+  }
+  .link {
+    display: none;
+  }
+  .best-seller > div:first-child {
+    display: none;
+  }
+  .banner {
+    height: 745px;
+    width: auto;
+  }
+  .banner > img {
+    height: 40%;
+  }
+  .banner-text {
+    width: 100%;
+    top: 40%;
+    display: flex;
+    margin-left: 0;
+  }
 
-        height: 745px;
-        width: auto;
-        /* range: url('https://www.rodanandfields.com/en-us/medias/22-Regimen-Repositioning-HP-Banners.jpg?context=bWFzdGVyfHJvb3R8MTA1MjM0NXxpbWFnZS9qcGVnfGg0MS9oOTAvMTQ5MjYyMzI3MTUyOTQuanBnfDM5NmUwZmZkZDI0NzA3NTI2NTBjYzljZmI0YzIxOThjOTJkOThhMTQ0M2YzNzA5ZDUyYjRlYTk3OTc0NjEzNTQ'); */
-      }
-      .banner>img{
-          height:40%;
-      }
-      .banner-text{
-        width: 100%;
-        top:40%;
-        display: flex;
-        margin-left:0;
-        /* flex-direction: row; */
-      }
+  .checkbtn {
+    margin: 7px 0px 0 10px;
+  }
 
-
-      .skincare>div>h1{
-          font-size: 23px;
-      }
-      .products{
-          display: grid;
-          grid-template-columns: repeat(2,1fr)
-
-      }
-      .products-btn{
-         margin-left :80px;
-      }
-      .hover-img{
-          height: 130px;
-      }
+  .footer {
+    flex-direction: column-reverse;
+    width:87%;
+    padding-left: 25px;
+  }
+  .About_and_help {
+    flex-direction: column;
+    gap: 0;
+  }
+  .socials {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .invisible {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .visible {
+    width: 20px;
+  }
+  .logo {
+    margin-left: -50px;
+  }
+  .skincare > div > h1 {
+    font-size: 23px;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .products-btn {
+    margin-left: 80px;
+  }
+  .hover-img {
+    height: 130px;
+  }
 }

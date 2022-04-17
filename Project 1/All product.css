@@ -1,3 +1,11 @@
+.top{
+    background-color: #f7f4f2;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    font-size: 12px;
+}
+
 .navbar-outer{
     display: flex;
 
@@ -5,7 +13,7 @@
 .navbar-outer>div{
     width: 100%;
     /* border: 1px solid #000; */
-    font-size: 12px;
+
 }
 .navbar-outer>div:nth-child(1){
     text-align: left;
@@ -14,14 +22,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
-} 
-
- .navbar-outer>div:nth-child(3){
+}
+.navbar-outer>div:nth-child(3){
     display: flex;
     justify-content: flex-end;
     align-items:center;
-    font-size: 15px;
 }
 
 #navigation {
@@ -41,28 +46,14 @@
     text-decoration: none;
     color: #000;
 }
-#navigation {
-    display: flex;
-    justify-content: space-evenly;
-    
+.main {
+    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    width: 75%;
+    margin: auto;
     margin-top: 5px;
-    
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
-}
-
-#navigation > div {
-    display: flex;
-}
-
-#navigation a {
-    text-decoration: none;
-    color: black;
-    font-size: 12.5px;
 }
     #container{
         display: grid;
-        
         grid-template-columns: repeat(3,1fr);
        justify-content: space-around;
         gap: 20px;
@@ -77,14 +68,15 @@
     }
     #container>.box{
          height: auto;
-         }
-    img{
+    }
+
+    #container>div>img{
         width: 100%;
         height: 50%;
         cursor: pointer;
     }
     button{
-        padding: 9px 120px 9px 120px;
+    padding: 9px 120px 9px 120px;
     background-color: white;
     border: 0.5px solid black;
     border-radius: 8px;

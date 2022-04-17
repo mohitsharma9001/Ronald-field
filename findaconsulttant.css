@@ -78,6 +78,12 @@ hr{
 .right_nav{
     text-align: right;
 }
+.main {
+    font-family: ProximaNovaRegular, Arial, Sans-Serif;
+    width: 75%;
+    margin: auto;
+    margin-top: 5px;
+  }
 /* .right_nav{
     display: flex;
     justify-content: right; 
@@ -222,52 +228,47 @@ display: flex;
 justify-content: space-between;
 width: 40%;
  } */
- .footer{
-    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+ .footer {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
     display: flex;
     /* border: 1px solid black; */
     justify-content: space-between;
-      
   }
-  .footer h1{
-      font-weight: lighter;
-  }
-.footer a{
+  .footer a {
     color: black;
-    text-decoration: none;
   }
-
+  
   /* remove this in media queries */
-  .About_and_help{
+  .About_and_help {
     display: flex;
     /* border: 1px solid blue; */
     justify-content: flex-start;
     gap: 100px;
- }
-
-
-.fa {
-    font-size: 20px;
-    width:10px;
-    margin-right: 20px;
-   
   }
-
-  .socials{
-    width:40%;
+  .About_and_help > div > p {
+    font-size: 12px;
   }
   
- .socials>p{
+  .fa {
     font-size: 20px;
- }
-
- .bottom p{
-    font-family: ProximaNovaRegular,Arial,Sans-Serif;
+    width: 60px;
+  }
+  
+  .socials {
+    width: 40%;
+  }
+  
+  .socials > p {
+    font-size: 20px;
+  }
+  
+  .bottom p {
+    font-family: ProximaNovaRegular, Arial, Sans-Serif;
     font-weight: lighter;
     font-size: 13px;
     cursor: pointer;
-
- }
-  
+  }
 
  

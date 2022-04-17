@@ -319,6 +319,7 @@
 }
 .imageEffect {
   position: relative;
+  background-color: #fff;
 }
 .imageEffect:hover img {
   opacity: 0;

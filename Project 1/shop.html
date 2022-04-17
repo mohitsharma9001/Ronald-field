@@ -58,7 +58,8 @@
            <p>Typical Use: Once daily, in the PM</p>
            <p id="pay">Save up to $20 the first time you pay with Klarna.</p>
            <p id="rating">⭐⭐⭐⭐ 4.2 (2134)</p>
-           <button>ADD TO BAG</button>
+           
+           <button onclick="clickFn()">Add To Bag</button>
            <div id="discount">
                <h4>
                    60 Days money back gurantee
@@ -123,15 +124,15 @@
   document.querySelector("#size").innerHTML = allProduct.Size;
   document.querySelector("#price").innerHTML = `$${allProduct.price}`
   
-
-  button.addEventListener('click' ,function(){
-            product.push(allProduct)
-          console.log(product)
-         localStorage.setItem('product',JSON.stringify(product));
+  function clickFn(){
+   event.defaultPrevented()
+    localStorage.setItem('product',JSON.stringify(product));
          alert("Product Added")
-        //  alerti(mojo)
-
-  });
+                }
+//   button.addEventListener('click' ,function(){
+//             product.push(allProduct)
+//           console.log(product)
+//   });
 </script>
 </html>
 

@@ -159,9 +159,7 @@
   .banner{
     width: 100%;
     height: 600px;
-    /* background-image: url('https://www.rodanandfields.com/en-us/medias/22-Regimen-Repositioning-HP-Banners.jpg?context=bWFzdGVyfHJvb3R8MTA1MjM0NXxpbWFnZS9qcGVnfGg0MS9oOTAvMTQ5MjYyMzI3MTUyOTQuanBnfDM5NmUwZmZkZDI0NzA3NTI2NTBjYzljZmI0YzIxOThjOTJkOThhMTQ0M2YzNzA5ZDUyYjRlYTk3OTc0NjEzNTQ');
-    background-repeat: no-repeat;
-    background-size: cover; */
+   
     margin-bottom:10px;
     position: relative;
   }
@@ -235,12 +233,10 @@
       width: 75%;
       margin-left: 150px;
       background-color: #fff;
-      /* margin-top: 100px; */
-      /* display: grid; */
+      
       display:flex;
       justify-content: space-evenly;
-      /* grid-template-columns: repeat(3,1fr) */
-      /* padding: 30px */ 
+    
     }
     @media only screen and (max-width:600px){
       .bg{
@@ -335,19 +331,17 @@
 }
 
 .merge{
-    /* border: 1px solid #000;  */
+  
      display: flex; 
      gap: 15px;
     overflow-x: scroll;
 }
-/* .merge::-webkit-scrollbar{
-    width: 10px;
-} */
+
 
 
 .card{
     display: flex;
-    /* border: 1px solid rgb(206, 22, 22);  */
+    
 }
 .card>div:first-child{
     width: 320px;

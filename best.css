@@ -16,7 +16,7 @@
     /* line-height: 2px; */
 }
 
-#container {
+#checkout {
     width: 70%;
     margin: auto;
     display: grid;
@@ -26,20 +26,20 @@
 
 }
 
-#container>div {
+#checkout>div {
     text-align: center;
     color: grey;
     padding-top: 30px;
 
 }
 
-#container>div>img {
+#checkout>div>img {
     height: 324px;
     width: 324px;
     cursor: pointer;
 }
 
-#container>div>button {
+#checkout>div>button {
 margin-top: 15px;
     padding: 9px 120px 9px 120px;
     background-color: white;
@@ -53,21 +53,21 @@ button:hover {
 
 }
 
-#container>div>p {
+#checkout>div>p {
     cursor: pointer;
     color: black;
     margin-bottom: 30px;
 }
 
 @media all and (min-width:450px) and (max-width:750px) {
-    #container {
+    #checkout {
 
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, auto);
         width: 100%;
     }
 
-    #container>div>img {
+    #checkout>div>img {
         height: 165px;
         width: 165px;
         cursor: pointer;
@@ -85,13 +85,13 @@ button:hover {
 }
 
 @media all and (min-width:51px) and (max-width:449px) {
-    #container {
+    #checkout {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, auto);
         width: 100%;
     }
 
-    #container>div>img {
+    #checkout>div>img {
         height: 100px;
         width: 100px;
         cursor: pointer;
@@ -105,7 +105,7 @@ button:hover {
     #head {
         text-align: center;
     }
-    #container>div>button{
+    #checkout>div>button{
         display: flex;
         justify-content: center;
         padding: -5px -20px ;

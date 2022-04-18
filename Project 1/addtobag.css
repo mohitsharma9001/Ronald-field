@@ -244,3 +244,42 @@
     font-weight: bold;
  }
  }
+
+
+
+
+
+
+
+
+/* 
+ #checkout{
+ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+     gap: 20px;
+     width: 75%;
+     
+      }
+   
+    .boxx>button{
+     padding: 4px 110px 4px 110px;
+     background-color: white;
+     border: 0.5px solid black;
+     border-radius: 8px;
+     font-weight: bold;
+     cursor: pointer;
+    }
+    .boxx>img{
+        width: 80%;
+        height: 65%;
+        border-radius: 10px;
+    } 
+    #container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .boxx{
+        width: 80%;
+    } */

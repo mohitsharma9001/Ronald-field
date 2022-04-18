@@ -1,3 +1,4 @@
+
 var product = JSON.parse(localStorage.getItem('product'));
 var totalSum = product.reduce(function(sum,ele,index,arr){
 return sum+ Number(ele.price);
@@ -43,3 +44,34 @@ document.querySelector('#price').innerText = "Total Price :"+" "+ '$'+totalSum
    document.querySelector('#check').append(box);
     
    });
+
+//    var cartData = JSON.parse(localStorage.getItem('cartData'));
+//    document.querySelector('#checkout').innerHTML = " ";
+   
+//    cartData.forEach(function(allitem,index) {
+    
+//            var boxx = document.createElement('div');
+//            boxx.setAttribute('class','boxx')
+//            var img = document.createElement('img');
+//            img.src = allitem.image_url;
+
+//            var name = document.createElement('p');
+//            name.textContent = allitem.name;
+
+//            var price = document.createElement('price');
+//            price.textContent = `$${allitem.price}`;
+
+          
+//            var button = document.createElement('button');
+//            button.innerText = 'Remove item';
+//            button.addEventListener('click', function () {
+//             cartData.splice(index, 1);
+//                localStorage.setItem('cartData', JSON.stringify(cartData));
+//                window.location.reload();
+//            });
+
+//            boxx.append(img, name, price, button);
+
+//            document.querySelector('#checkout').append(boxx);
+
+//        });display(cardData)

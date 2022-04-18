@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        
+        #contact{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+           
+            justify-content: space-between;
+            width: 40%;
+            margin: auto;
+        }
+        hr{
+            width: 40%;
+        }
+        h2{
+            text-align: center;
+            font-weight: lighter;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            justify-content: space-between;
+            width: 40%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        input{
+            padding: 10px;
+        }
+        form >div> input{
+            padding: 10px;
+        }
+        .name{
+            display: flex;
+            justify-content: space-between;
+        }
+        .place{
+            display: flex;
+            justify-content: space-between;
+        }
+        @media screen and (max-width: 600px) {
+            .name{
+                display: grid;
+            }
+            .place{
+                display: grid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="contact">
+        <h2>Contact</h2>
+        <div>
+            <input type="email" placeholder="Email" style="width: 100%; margin-bottom: 20px;">
+            <input type="submit" value="Contact Info" onclick="contact()" style="width: 103%;">
+        </div>
+        
+    </div>
+    <hr>
+    <div id="shopping">
+        <h2>Shoping</h2>
+        <hr>
+        <form>
+            <div class="name">
+                <div ><label for="">First Name</label><br>
+                    <input type="text"style="width: 90%;"/></div>
+                <div style="width: 40%;" class="ls"><label for="">Last Name</label><br>
+                     <input type="text"style="width: 90%;"></div>
+            </div>
+                <label style="margin-top: 40px;">Address</label>
+                <input type="text">         
+                <label style="margin-top: 40px;">Address2</label>
+                <input type="text" style="margin-bottom: 40px;">
+            
+            <div class="place">
+                <div>
+                <label for="">City</label><br>
+                <input type='text'style="width: 50%;" />
+            </div>
+                <div>
+                    <label for="">State</label><br>
+                    <select style="padding: 10px;width: 70%;">
+                        <option>Arunachal Pradesh</option>
+                        <option>Maharastra</option>
+                        <option>Gujrat</option>
+                        <option>Assam</option>
+                        <option>Bihar</option>
+                        <option>other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Zipcode</label><br>
+                    <input type='number' style="width: 50%;" />
+                </div>
+            </div>
+            <label style="margin-top: 40px;">Phone Number</label>
+            <input type="number"  style="margin-bottom: 40px;"/>
+            <input type="submit" value="Payment" onclick="PaymentFn()">
+
+        </form>
+    </div>
+</body>
+<script>
+   function PaymentFn(){
+       alert("Payment Successfully")
+   }
+   function contact(){
+       alert("Contact Information add Successfully")
+   }
+</script>
+</html>

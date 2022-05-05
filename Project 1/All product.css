@@ -46,12 +46,12 @@
     text-decoration: none;
     color: #000;
 }
-.main {
+/* .main {
     font-family: ProximaNovaRegular,Arial,Sans-Serif;
     width: 75%;
     margin: auto;
     margin-top: 5px;
-}
+} */
     #container{
         display: grid;
         grid-template-columns: repeat(3,1fr);

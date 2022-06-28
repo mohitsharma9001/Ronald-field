@@ -1,0 +1,416 @@
+body{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+#bannerContainer{
+    /* border: 2px solid red; */
+    width: 95%;
+    /* height: 18rem; */
+    padding: 0 10%;
+    box-sizing: border-box;
+    margin-top: 50px;  
+    margin: auto; 
+}
+
+#bannerContainer section{
+    display: flex;
+    /* flex-grow: 1 ; */
+}
+#bannerContainer section article{
+    
+    width: 50%;
+}
+#uspContainer{
+    display: flex;
+}
+
+#bannerContainer h1{
+    margin: 0;
+    font-weight: 300;
+    font-size: 230%;
+    margin-bottom: 6%;
+    color: #3B4C69;
+    margin-top: 8%;
+}
+#bannerContainer h1 span{
+    font-weight: 600;
+}
+#bannerContainer  i{
+    /* margin-top: %; */
+    margin-right: 2%;
+}
+#bannerContainer  #ispan1{
+    background: url('https://static.pbcdn.in/cdn/images/svg/home-page-icons.svg?v=6');
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background-size: 100%;
+}
+#bannerContainer   i img{
+    width: 37px;
+    height: 37px;
+}
+
+ #bannerContainer #ispan2{
+    background: url('https://static.pbcdn.in/cdn/images/svg/home-page-icons.svg?v=6');
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background-size: 100%;
+    background-position: 0 1.6%;
+    margin-left: 2%;
+} 
+ #bannerContainer article #displayImage{
+    height: 17rem;
+    width: auto;
+    vertical-align: auto;
+}
+#spanHeading1{
+    color: #776BFD;
+}
+#spanHeading2{
+    color: #FF9B2C;
+}
+#spanHeading1, #spanHeading2{
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0;
+} 
+#carouselArticle{
+    display: flex;
+}
+#carousel3{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#carousel3>span{
+    height: 40px;
+    width: 40px;
+  
+    font-size: small;
+   background-color: #E6FCFF;
+   padding: 2%;
+   border-radius: 5px;
+}
+#carousel3 > p>b{
+    font-size: 18px;
+}
+#viewPlans{
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0663F6;
+    color: white;
+    cursor: pointer;
+}
+#imge{
+    width: 128px;
+    height: 82px;
+    background-color: #F2F7FF;
+    border-radius: 8px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+#allPolicy{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin-top: 40px;
+    /* margin-left: -20px; */
+    
+}
+#imge img{
+    width: 50px;
+  margin:auto ;
+}
+.policy p{
+    font-size: 14px;
+text-align: center;
+align-items: center;
+}
+#also{
+    margin: auto;
+}
+#pTage{
+    margin-left: 195px;
+    margin-bottom: -20px;
+    margin-top: 40px;
+    color: #0663F6;
+    font-weight: bolder;
+}
+#alsoBuy{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 75%;
+   gap: 15px;
+  margin: auto;
+    margin-top: 40px;
+}
+.also{
+    display: flex;
+    width: auto;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgb(52 105 203 / 16%);
+    padding: 1%;
+}
+
+#alsoBuy .also div{
+   height: 5px;
+   width: 5px;
+   background-color: #3B4C69;
+   border-radius: 50%;
+   margin-top: 6px;
+   margin-right: 5px;
+   margin-left: 10px;
+   color: #253858;
+}
+#alsoBuy .also b{
+    
+  margin-top: 20px;
+  margin-left: -50px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #253858;
+ }
+ #alsoBuy .also p{
+    font-weight: lighter;
+    margin-top: -0.5px;
+    font-size: 12px;
+    color: #253858;
+   }
+#insurance-div{
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    padding: 3%;
+}
+   .main-div{
+    height: 220px;
+    width: 400px;
+   border-radius: 15px;
+   background: #7282ff url("https://static.pbcdn.in/cdn/images/home-v1/health-insurance-bg.png") right -1px top no-repeat;
+   }
+   
+   #health1{
+    display: flex;
+    justify-content: space-around;
+   
+   }
+   #health1 > img{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    margin-right: -20px;
+   }
+   #heart{
+    margin-top: 15px;
+    line-height: 1px;
+    margin-left: -60px;
+   }
+   #heart p{
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    margin-left: 5px;
+   }
+   #heart img{
+    width: 35px;
+    
+   }
+   #dis{
+    color: white;
+    font-size: 22px;
+    margin-left: 25px;
+   }
+
+   /* 2nd main div */
+   .main-div1{
+    height: 220px;
+    width: 400px;
+   border-radius: 15px;
+   background: #4FDC95 url("https://static.pbcdn.in/cdn/images/home-v1/investment-plans-bg.png") right -1px top no-repeat;
+   }
+
+   #health2{
+    display: flex;
+    justify-content: space-around;
+   
+   }
+   #health2 > img{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    margin-right: -20px;
+   }
+   #heart2{
+    margin-top: 15px;
+    line-height: 1px;
+    margin-left: -60px;
+   }
+   #heart2 p{
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    margin-left: 5px;
+   }
+   #heart2 img{
+    width: 35px;
+    
+   }
+   #dis2{
+    color: white;
+    font-size: 24px;
+    margin-left: 25px;
+   }
+
+   /* main-div 3 css? */
+
+   .main-div2{
+    height: 220px;
+    width: 400px;
+   border-radius: 15px;
+   background: #3CBBDA url("	https://static.pbcdn.in/cdn/images/home-v1/health-insurance-bg.png") right -1px top no-repeat;
+   }
+
+   #health3{
+    display: flex;
+    justify-content: space-around;
+   
+   }
+   #health3 > img{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    margin-right: -20px;
+   }
+   #heart3{
+    margin-top: 15px;
+    line-height: 1px;
+    margin-left: -60px;
+   }
+   #heart3 p{
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    margin-left: 5px;
+   }
+   #heart3 img{
+    width: 35px;
+    
+   }
+   #dis3{
+    color: white;
+    font-size: 21px;
+    margin-left: 20px;
+   }
+
+   #insurance-colordiv{
+    width: 100%;
+    height: 300px;
+    background: #F2F7FF;
+    margin: 0;
+    padding: 0%;
+}
+
+/* best place div css */
+
+
+#best-place{
+    width: 100%;
+    height: 500px ;
+    background: url("https://static.pbcdn.in/cdn/images/home-v1/left-bg.png")left top no-repeat,url("	https://static.pbcdn.in/cdn/images/home-v1/right-bg.png")right top no-repeat
+    ;
+    display: flex;
+    justify-content: space-evenly;
+}
+#best-place > #pTag p{
+    color: black;
+    font-weight: 100;
+    font-size: 35px;
+    line-height: 45px;
+    margin-top: 80px;
+}
+#best-place > #pTag b{
+font-weight: 500;
+}
+
+.first-div{
+height: 180px;
+width: 230px;
+line-height: 20px;
+
+}
+#summeryinsurance{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+   margin-top: 50px;
+   margin-left: 50px;
+  
+}
+.info1{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-left:2px solid#2438d4;
+    border-radius: 5px;
+}
+.info2{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-left:2px solid#7585f9;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.info3{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-left:2px solid turquoise;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.info4{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-left:2px solid yellow;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.info1 .comtant{
+    margin-left: 20px;
+}
+.info2 .comtant{
+    margin-left: 20px;
+}
+.info3 .comtant{
+    margin-left: 20px;
+}
+.info4 .comtant{
+    margin-left: 20px;
+}
+
+/* advertisement div css */
+
+.main-adv-div{
+    width: 94.3%;
+    height: 100px;
+    padding: 3%;
+    margin-top: 30px;
+    background: #F2F7FF;
+}
+.advertisement-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 75%;
+    margin: auto;
+    gap: 20px;
+}
+.advertisement-div .first-div img{
+   width: 360px;
+   height: 100px;
+   
+}
